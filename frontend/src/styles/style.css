@@ -1,0 +1,124 @@
+:root {
+    --light-gray: #C0BFBF;
+    --soft-lavender: #A892C2;
+    --deep-purple: #4C366D;
+    --dark-violet: #332C43;
+    --almost-black: #1E1B26;
+  }
+  
+  body {
+    background: linear-gradient(135deg, var(--almost-black), var(--deep-purple));
+    color: var(--light-gray);
+    font-family: "Poppins", sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+  }
+  
+  .register-container {
+    background: rgba(50, 40, 60, 0.8);
+    border-radius: 12px;
+    padding: 30px;
+    width: 350px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    backdrop-filter: blur(10px);
+  }
+  
+  .brand {
+    font-size: 24px;
+    font-weight: bold;
+    color: var(--soft-lavender);
+  }
+  
+  .register-title {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 20px;
+  }
+  
+  input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 8px;
+    background: var(--dark-violet);
+    color: var(--light-gray);
+    font-size: 14px;
+  }
+  
+  input::placeholder {
+    color: var(--soft-lavender);
+  }
+  
+  .register-btn {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    background: var(--deep-purple);
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  .register-btn:hover {
+    background: var(--soft-lavender);
+    color: var(--almost-black);
+  }
+  
+  .login-link {
+    margin-top: 15px;
+    font-size: 14px;
+  }
+  
+  .login-link a {
+    color: var(--soft-lavender);
+    text-decoration: none;
+  }
+  
+  .login-link a:hover {
+    text-decoration: underline;
+  }
+
+  .social-login {
+    margin-top: 20px;
+  }
+  
+  .social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+  }
+  
+  .social-icons a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(255, 255, 255, 0.2);
+    padding: 10px;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    transition: 0.3s;
+  }
+
+  .social-icons a {
+    color: var(--soft-lavender);
+    text-decoration: none;
+  }
+  
+  .social-icons a:hover {
+    background: var(--light-gray);
+    color: var(--almost-black);
+  }
+  
+  .social-icons img {
+    width: 20px;
+    height: 20px;
+  }
+  
