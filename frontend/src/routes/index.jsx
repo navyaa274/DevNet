@@ -46,6 +46,7 @@ const Path = () => {
               <Route path="/register" element={<Register />} /> 
               <Route path="/login/:id" element={<LoginOtp />} />
               <Route path="/verify/:id" element={<VerifyOtp />} />
+              <Route path="/join/:roomId" element={<Home />} />
               {/* <Route path="/webeditor" element={<ProtectedRoute><Editor /></ProtectedRoute>} /> */}
               {/* <Route path="/codeeditor" element={<ProtectedRoute><EditorCode /></ProtectedRoute>} /> */}
               {/* <Route path="/payment" element={<ProtectedRoute><Payment /></ProtectedRoute>} /> */}

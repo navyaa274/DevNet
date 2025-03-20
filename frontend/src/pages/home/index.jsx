@@ -5,14 +5,14 @@ import "../../styles/landing.css";
 // import logo from "./dv2.jpg";
 import { logoutUser } from '../../redux/actions/userActions.js';
 import LogoutModal from '../../components/modals/logoutModal.jsx';
+import VideoChat from '../../components/videoChat/VideoChat.jsx';
 import { useDispatch, useSelector } from "react-redux";
     
 
 const Home = () => {
 
     const [isOpen, setIsOpen] = useState(true);
-  
-    // const [openCreateModal, setOpenCreateModal] = useState(false);
+    const [openVideoChat, setOpenVideoChat] = useState(false);
     const [openLogoutModal, setOpenLogoutModal] = useState(false);
     
     const navigate= useNavigate();
@@ -63,6 +63,7 @@ const Home = () => {
   return (
     <div>
       <p>GHAR BHI BANANA HAIIIII 😭</p>
+      <button onClick={() => setOpenVideoChat(true)} style={{ marginRight: '10px' }}>Start Video Call</button>
       <button onClick={handleLogoutOpenModal}>Logout</button>
 
       {openLogoutModal && (
@@ -74,9 +75,9 @@ const Home = () => {
                     <LogoutModal onClose={handleLogoutCloseModal} onConfirm={handleLogout} />
                 </div>
             </div>
-            
-            )
-        }
+        )}
+
+        <VideoChat isOpen={openVideoChat} onClose={() => setOpenVideoChat(false)} />
     </div>
     
   );
